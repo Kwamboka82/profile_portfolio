@@ -239,7 +239,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.45956ecd3d86ff56ea11864e41bcc981.css">
+  <link rel="stylesheet" href="/css/wowchemy.3784a5afc587ce47c972ba6f13919f5d.css">
 
   
 
@@ -326,7 +326,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.1df0392aab543464b23a85146803aaf2.js"></script>
+  <script src="/js/wowchemy-init.min.764d4838fbd6a3ba036be5faa1584a93.js"></script>
 
   
 
@@ -616,6 +616,8 @@
       <div class="article-style">
         
           OutPuts in ShinyApps Outputs are build in shinyApps based on inputs. We use render functiond to create a variety of outputs ranging from plots renderPlot, tables renderTable and images renderImage.
+Add a table output  In order to add any output to a Shiny app, you need to:
+ Create the output (plot, table, text, etc.). Render the output object using the appropriate *render___* function. Assign the rendered object to output$x.
         
       </div>
     </div>
@@ -640,6 +642,8 @@
           INPUTS Shiny provides a wide variety of inputs that allows users to provide text (textInput, selectInput), numbers (numericInput, sliderInput), booleans (checkBoxInput, radioInput), and dates (dateInput, dateRangeInput).
 For example:-
 To select a range a name from a predifined range of choice we use - the selectInput.
+selectInput(&quot;InputID&quot;, &quot;Label&quot;, choices = c(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;))  To choose a range of values to filter weight we can use the sliderInput.
+sliderInput(&quot;InputID&quot;, &quot;Label&quot;, value = 1925, max = 2021, min =1900,)  To select three phones to compare from a set of 10 options we can use the checkBoxInput
         
       </div>
     </div>
@@ -653,6 +657,8 @@ To select a range a name from a predifined range of choice we use - the selectIn
         
           Building a &ldquo;Hello world shinyApp&rdquo; We begin to demonstrate the building blocks of a shinyApp.
 An App needs a User interface (ui) and a server. The majic about the shiny package is that it can create both of this within R, plus run your app using an additionational shiny function.
+First,
+ load the library using the shiny.  library(shiny)  Create ui using the html function  ui &lt;- fluidPage()  Define a custom function to create the server  server &lt;- function(input, output, session){ }  finally run your app.
         
       </div>
     </div>
@@ -665,8 +671,8 @@ An App needs a User interface (ui) and a server. The majic about the shiny packa
       <div class="article-style">
         
           Inferential Statistics
-If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
-create a new post as usualadd runtime: shiny (and output: html_document if it is not already included) in the YAML metadatainsert the following HTML code in the body of the post:&lt;iframe height=&quot;800&quot; width=&quot;100%&quot; frameborder=&quot;no&quot; src=&quot;https://yourname.
+ If you have developed and deployed a Shiny app and would like to embed it in blogdown, follow these steps:
+create a new post as usual add runtime: shiny (and output: html_document if it is not already included) in the YAML metadata insert the following HTML code in the body of the post:  &lt;iframe height=&quot;800&quot; width=&quot;100%&quot; frameborder=&quot;no&quot; src=&quot;https://yourname.shinyapps.io/InferentialStatistics/&quot;&gt; &lt;/iframe&gt; You should change the URL with the URL of your deployed Shiny app (after src=, do not forget that the URL should start with http:// or https:// and should be surrounded by "
         
       </div>
     </div>
@@ -850,7 +856,7 @@ create a new post as usualadd runtime: shiny (and output: html_document if it i
       
     
     
-    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+    <script src="/js/wowchemy.min.ac349c6e2fcc34ddbb8a8280b927af59.js"></script>
 
     
 

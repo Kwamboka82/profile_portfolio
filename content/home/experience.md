@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Data Scientist
-    company: Xetova Software Company
+    company: CSV Research
     company_url: ''
     location: Nairobi
     date_start: '2020-10-01'
